@@ -1,17 +1,17 @@
 package com.ds.sorting;
 
+import java.util.Arrays;
+
 public class SortingTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int arr[] = new int[] {9,8,7,6,5}; 
-		BubbleSort.bubbleSort(arr);
-		print(arr);
-	}
-	static void print(int[] arr) {
-		for(int i:arr) {
-			System.out.print(i+" ");
-		}
+		//BubbleSort.bubbleSort(arr);
+		//SelectionSort.selectionSort(arr);
+		//InsertionSort.insertionSort(arr);
+		//MergeSort.mergeSort(arr, 0, arr.length-1);
+		//QuickSort.quickSort(arr, 0, arr.length-1);
+		Arrays.stream(arr).forEach(i->System.out.print(i+" "));
 	}
 
 }
